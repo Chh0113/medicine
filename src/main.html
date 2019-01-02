@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/swiper.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/swiper.min.js" ></script>
+		<script type="text/javascript" src="lib/jquery-3.2.1.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
+		<script type="text/javascript" src="js/main.js" ></script>
+	</head>
+	<body>
+		
+		<!--头部-->
+		<div id="top">
+			<div id="top_title">
+				<a href="" id="shoucang">收藏康德乐</a> &nbsp; 
+				<em>您好，欢迎来到康德乐大药房！</em>
+				<a href="login.html" class="login">登录</a>
+				<a href="zhuce.html" class="member">免费注册</a>
+			</div>
+			<div id="top_right">
+			<strong class="sitemap">我的康德乐<s></s>
+		    	<div class="sitecur kdllist" id="sitemaps" style="display: none;"><b>我的康德乐<s></s></b></div>
+		   		<dl class="sitemenu kdllist" id="sitemapx" style="display: none;">
+    	    	<a href="" target="_blank">我的订单</a>
+		        <a href="" target="_blank">我的收藏</a>
+		        <a href="" target="_blank">收货地址</a>      
+		    	<div class="clear"></div>
+		    	</dl>
+		    </strong>
+		    <i>|</i>
+		    <a target="_blank" href="" rel="nofollow">帮助中心</a>
+		    <i>|</i>
+		    <a href="" target="_blank" id="phone"><span class="icon"></span>手机版</a>	
+		    <i>|</i>
+		    <strong class="sitemap sitemap1" id="sit">网站导航<s></s>
+		    <div class="sitecur" id="sit1" style="display: none;"><b>网站导航<s></s></b></div>
+		   	<dl class="sitemenu  navlist" id="sit2" style="display: none;">
+		    	<dd><a href="" target="_blank">药品类目</a></dd>
+		        <dd><a href="" target="_blank">查找药品</a></dd>
+		        <dd><a href="" target="_blank">门店查询</a></dd>
+		        <dd><a href="" target="_blank">品牌合作</a></dd>        
+		    <div class="clear"></div>
+		    </dl>
+		    </strong>
+		    <i>|</i>
+		    <em>互联网药品交易资格证 粤C20160028</em>
+			</div>
+		</div>
+		<!--中间标题栏-->
+		<div id="header_box">
+			<div id="img">
+				<img src="images/logo.jpg" />
+				<img id="gif" src="images/certificates.gif" />
+			</div>
+			
+			<div id="search">
+			<div class="search_top">
+	        <form id="searchForm" name="searchForm" method="get" action="/search">
+	          <input name="keywords" type="text" id="keyword" value="虎标颈肩霜" class="text" onfocus="if(this.value=='虎标颈肩霜') this.value='';" onblur="if(this.value=='') this.value='虎标颈肩霜';">
+			  <input type="hidden" id="auto_type" value="0">
+	          <input type="submit" class="searchbtn" value="搜索" onsubmit="return checkSearchForm()">
+	          <div class="seartip" id="auto" style="display: none; border: 1px solid rgb(204, 204, 204); left: 0px; width: 390px; background: white; z-index: 4; cursor: pointer;"></div>
+	        </form>
+	        </div>
+	        
+	        <div class="search_bot">  
+			<ul>
+				<li>热门搜索：</li>
+				<li><a href="" title="易瑞沙" target="_blank">易瑞沙</a></li>
+				<li><a href="" title="芭克硅胶软膏" target="_blank">芭克硅胶软膏</a></li>
+				<li><a href="" title="人血白蛋白" target="_blank">人血白蛋白</a></li>
+				<li><a href="" title="恩替卡韦" target="_blank">恩替卡韦</a></li>
+				<li><a href="" title="金戈" target="_blank">金戈</a></li>
+				<li><a href="" title="必利劲" target="_blank">必利劲</a></li>
+				<li><a href="" title="七十味珍珠丸" target="_blank">七十味珍珠丸</a></li>
+				<li><a href="" title="开浦兰" target="_blank">开浦兰</a></li>
+			</ul>
+	        </div>
+	        </div>
+	        
+	        <div id="header_right">
+	        	<div class="head_rigcart">
+					<div class="head_login">
+						<a href="" rel="nofollow" class="homeacct">登陆</a>&nbsp;&nbsp;&nbsp;
+						<a href="" class="homeacct red">免费注册</a>  
+					</div>
+			        <div class="head_cart" id="mycart"> 
+			        	<a href="" target="_blank">购物车 <strong class="red etcend">0</strong> 件</a>
+			        </div>
+			       <div style="clear: both;"></div>
+			    </div>
+	        </div>
+		</div>
+		
+			
+		<!--中间导航栏部分-->
+		<div id="head_nav">
+			<div id="head_tou">
+				<h2> 
+				<a id="htou" href="" target="_blank">全部商品分类</a> 
+				</h2>
+				<em id="emm"></em>
+				<div id="head_tou_caidan" class="caidan" style="display: block;">
+					<div class="i-first" id="allmenu"> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="肿瘤科用药" target="_blank">肿瘤科用药</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="肝病科用药" target="_blank">肝病科用药</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="皮肤性病科用药" target="_blank">皮肤性病科用药</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="神经科用药" target="_blank">神经科用药</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="心脑血管科用药" target="_blank">心脑血管科用药</a> 
+				    	</h3> <s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="泌尿生殖科用药" target="_blank">泌尿生殖科用药</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="精神科用药" target="_blank">精神科用药</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="糖尿病科用药" target="_blank">糖尿病科用药</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="风湿免疫科用药" target="_blank">风湿免疫科用药</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="妇儿科/母婴用品" target="_blank">妇儿科/母婴用品</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="医疗护理器械" target="_blank">医疗护理器械</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="眼科用药" target="_blank">眼科用药</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="消化科" target="_blank">消化科</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="家庭常备" target="_blank">家庭常备</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="罕见病" target="_blank">罕见病</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="肾内科" target="_blank">肾内科</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+				    <div class="in-item"> 
+				    	<h3> 
+				    		<a href="" title="呼吸疾病科" target="_blank">呼吸疾病科</a> 
+				    	</h3> 
+				    	<s></s> 
+				    </div> 
+  				</div>
+  				
+				</div>
+			
+		<div class="subitem toggle" id="sub" name="1" style="top: 0px; display: none;">
+     	
+		<div class="item_lef" style="z-index:10;"> 
+			
+			<div class="diseases"> 
+			<dl> 
+				<dd class="ttit">
+					<a href="" title="肝癌" target="_blank">肝癌</a>
+				</dd> 
+				<dd class="tcon"> 
+					<a href="" title="多吉美" target="_blank">多吉美</a>  
+					<a href="" title="肝复乐片" target="_blank">肝复乐片</a>  
+					<a href="" title="化癥回生口服液" target="_blank">化癥回生口服液</a>  
+					<a href="" title="肝复乐胶囊" target="_blank">肝复乐胶囊</a>  
+					<a href="" title="复方万年青胶囊" target="_blank">复方万年青胶囊</a>  
+					<a href="" title="金龙胶囊" target="_blank">金龙胶囊</a>  
+					<a href="" title="金克" target="_blank">金克</a> 			
+				</dd> 
+			</dl> 
+			</div> 
+			
+			
+			<div class="diseases"> 
+			<dl> 
+			<dd class="ttit">
+			<a href="" title="肺癌" target="_blank">肺癌</a>
+			</dd> 
+			<dd class="tcon"> 
+			 <a href="" title="泰瑞沙" target="_blank">泰瑞沙</a>  
+			 <a href="" title="易瑞沙" target="_blank">易瑞沙</a>  
+			 <a href="" title="安体舒" target="_blank">安体舒</a>  
+			 <a href="" title="复方红豆杉胶囊" target="_blank">复方红豆杉胶囊</a>  
+			 <a href="" title="复方万年青胶囊" target="_blank">复方万年青胶囊</a>  
+			 <a href="" title="清肺散结丸" target="_blank">清肺散结丸</a>  
+			 <a href="" title="益肺清化颗粒" target="_blank">益肺清化颗粒</a>  
+			</dd> 
+			</dl> 
+			</div> 
+			<div class="diseases"> 
+			<dl> 
+			<dd class="ttit">
+			<a href="" title="鼻咽癌" target="_blank">鼻咽癌</a>
+			</dd> 
+			<dd class="tcon"> 
+			<a href="" title="复方斑蝥胶囊" target="_blank">复方斑蝥胶囊</a>  
+			<a href="" title="消癌平片" target="_blank">消癌平片</a>  
+			<a href="" title="平消胶囊" target="_blank">平消胶囊</a>  
+			<a href="" title="天芝草胶囊" target="_blank">天芝草胶囊</a>  
+			<a href="" title="慈丹胶囊" target="_blank">慈丹胶囊</a> 			
+			</dd> 
+			</dl> 
+			</div> 
+			<div class="diseases"> 
+			<dl> 
+			<dd class="ttit">
+			<a href="" title="胃癌" target="_blank">胃癌</a>
+			</dd> 
+			<dd class="tcon"> 
+			 <a href="" title="维康达" target="_blank">维康达</a>  
+			 <a href="" title="仙蟾片" target="_blank">仙蟾片</a>  
+			 <a href="" title="消癌平片" target="_blank">消癌平片</a>  
+			 <a href="" title="珍香胶囊" target="_blank">珍香胶囊</a>  
+			 <a href="" title="抗癌平丸" target="_blank">抗癌平丸</a>  
+			 <a href="" title="艾坦" target="_blank">艾坦</a>  
+			 <a href="" title="艾滨" target="_blank">艾滨</a> 			
+			</dd> 
+			</dl> 
+			</div> 
+			<div class="diseases"> 
+			<dl> 
+			<dd class="ttit">
+			<a href="" title="直肠癌" target="_blank">直肠癌</a>
+			</dd> 
+			<dd class="tcon"> 
+			 <a href="" title="复方斑蝥胶囊" target="_blank">复方斑蝥胶囊</a>  
+			 <a href="" title="珍香胶囊" target="_blank">珍香胶囊</a>  
+			 <a href="" title="消癌平胶囊" target="_blank">消癌平胶囊</a>  
+			 <a href="" title="抗癌平丸" target="_blank">抗癌平丸</a>  
+			 <a href="" title="复方斑蝥胶囊" target="_blank">复方斑蝥胶囊</a> 			
+			</dd> 
+			</dl> 
+			</div> 
+			<div class="diseases"> 
+			<dl> 
+			<dd class="ttit">
+			<a href="" title="结肠癌" target="_blank">结肠癌</a>
+			</dd> 
+			<dd class="tcon"> 
+			 <a href="" title="安体舒" target="_blank">安体舒</a>  
+			 <a href="" title="仙蟾片" target="_blank">仙蟾片</a>  
+			 <a href="" title="消癌平片" target="_blank">消癌平片</a>  
+			 <a href="" title="珍香胶囊" target="_blank">珍香胶囊</a>  
+			 <a href="" title="抗癌平丸" target="_blank">抗癌平丸</a>  
+			 <a href="" title="复方斑蝥胶囊" target="_blank">复方斑蝥胶囊</a> 			
+			</dd> 
+			</dl> 
+			</div> 
+			<div class="diseases"> 
+			<dl> 
+			<dd class="ttit">
+			<a href="" title="胰腺癌" target="_blank">胰腺癌</a>
+			</dd> 
+			<dd class="tcon"> 
+			<a href="" title="复方斑蝥胶囊" target="_blank">复方斑蝥胶囊</a>  
+			<a href="" title="安体舒" target="_blank">安体舒</a>  
+			<a href="" title="消癌平片" target="_blank">消癌平片</a>  
+			<a href="" title="复方红豆杉胶囊" target="_blank">复方红豆杉胶囊</a>  
+			<a href="" title="珍香胶囊" target="_blank">珍香胶囊</a>  
+			<a href="" title="抗癌平丸" target="_blank">抗癌平丸</a>  
+			<a href="" title="维康达" target="_blank">维康达</a> 			
+			</dd> 
+			</dl> 
+			</div> 
+			<div class="diseases"> 
+			<dl> 
+			<dd class="ttit">
+			<a href="" title="食道癌" target="_blank">食道癌</a>
+			</dd> 
+			<dd class="tcon"> 
+			<a href="" title="安素" target="_blank">安素</a>  
+			<a href="" title="仙蟾片" target="_blank">仙蟾片</a>  
+			<a href="" title="增生平片" target="_blank">增生平片</a>  
+			<a href="" title="珍香胶囊" target="_blank">珍香胶囊</a>  
+			<a href="" title="抗癌平丸" target="_blank">抗癌平丸</a>  
+			<a href="" title="食道平散" target="_blank">食道平散</a>  
+			<a href="" title="全安素" target="_blank">全安素</a> 			
+			</dd> 
+			</dl> 
+			</div> 
+			<div class="diseases"> 
+			<dl> 
+			<dd class="ttit">
+			<a href="" title="乳腺癌" target="_blank">乳腺癌</a>
+			</dd> 
+			<dd class="tcon"> 
+			<a href="" title="复方斑蝥胶囊" target="_blank">复方斑蝥胶囊</a>  
+			<a href="" title="芙瑞" target="_blank">芙瑞</a>  
+			<a href="" title="瑞婷" target="_blank">瑞婷</a>  
+			<a href="" title="化癥回生片" target="_blank">化癥回生片</a>  
+			<a href="" title="复方红豆杉胶囊" target="_blank">复方红豆杉胶囊</a>  
+			<a href="" title="芪珍胶囊" target="_blank">芪珍胶囊</a>  
+			<a href="" title="消癌平片" target="_blank">消癌平片</a> 			
+			</dd> 
+			</dl> 
+			</div> 
+						
+	</div>	
+	<div style="clear: both;"></div>
+	    	 
+		</div>
+		<div style="clear: both;"></div>
+			</div>
+			
+			<ul id="sceva">
+				<li>
+					<a target="_blank" title="首 页" href="" class="">首 页</a>
+				</li>
+				<li class="secnav">
+					<em class="hoticon" style="top: -11.4115px;"></em>
+					<a title="专科频道" class="">专科频道<em class="secicon" id="seon"></em></a>
+		        	<div id="channel1" class="channel" style="display: none;">
+		        		<a href="" target="_blank">男科频道</a>
+						<a href="" target="_blank">糖尿病频道</a>
+						<a href="" target="_blank">肝病频道</a>
+						<a href="" target="_blank">白癜风频道</a>
+						<a href="" target="_blank">癫痫频道</a>
+						<a href="" target="_blank">银屑病频道</a>
+						<a href="" target="_blank">肿瘤频道</a>
+						<a href="" target="_blank">两性频道</a>
+						<a href="" target="_blank">妇科频道</a>
+						<a href="" target="_blank">脱发频道</a>
+					</div>
+		        </li> 		  
+				<li>
+					<a target="_blank" title="健康课堂" href="" class=""><s></s>健康讲堂</a>
+				</li>
+				<li class="secnav1">
+					<a title="资讯频道" class="">资讯频道<em class="secicon" id="seon1"></em></a>
+		        	<div id="channel2" class="channel" style="width: 83px; display:none;">
+		                <a href="" title="健康资讯" target="_blank" style="text-align:center !important;">健康资讯</a>
+						<a href="" title="药师博客" target="_blank" style="text-align:center !important;">行业资讯</a>
+						<a href="" title="药师博客" target="_blank" style="text-align:center !important;">药师博客</a>
+						<a href="" title="用药问答" target="_blank" style="text-align:center !important;">用药问答</a>
+		            </div>
+		        </li>
+				<li>
+					<a target="_blank" title="了解我们" href="" class="">了解我们</a>
+				</li>
+				<li>
+					<a target="_blank" title="慈善赠药" href="" class="">慈善赠药</a>
+				</li>
+		       
+		      </ul>
+			
+			
+			<div style="clear: both;"></div>
+			
+		</div>
+	
+	
+		<div id="content_center">
+			<div class="swiper-container" id="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background: url(images/lunbotu1.jpg);"></div>
+				<div class="swiper-slide" style="background: url(images/lunbotu2.jpg);"></div>
+				<div class="swiper-slide" style="background: url(images/lunbotu3.jpg);"></div>
+				<div class="swiper-slide" style="background: url(images/lunbotu4.jpg);"></div>
+				<div class="swiper-slide" style="background: url(images/lunbotu5.jpg);"></div>
+				<div class="swiper-slide" style="background: url(images/lunbotu6.jpg);"></div>
+				<div class="swiper-slide" style="background: url(images/lunbotu7.jpg);"></div>
+				<div style="clear: both;"></div>
+			</div>
+			<!--按钮-->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+			<!--分页-->
+			<div class="swiper-pagination"></div>
+			<div style="clear: both;"></div>
+		</div>
+		
+		
+		<div id="content_right">
+			<div class="right_txt">
+				<div class="flolef">康德乐大药房全国专科连锁直营门店一览</div>
+			</div>
+			
+			<div class="con_rside_sto_city activeBg" id="mdian">
+            	<ul class="activeTab" style="width:288px">
+            		<li>广州越秀店</li>
+            		<li>广州海珠店</li>
+            		<li>广州荔湾店</li>
+            		<li>北京海淀店</li>
+            		<li>北京朝阳店</li>
+            		<li>成都青羊店</li>
+            		<li>成都武侯店</li>
+            		<li>上海徐汇店</li>
+            		<li>上海浦东店</li>
+            		<li>上海静安店</li>
+            		<li>济南店</li>
+            		<li>杭州店</li>
+            		<li>西安店</li>
+            		<li>南京店</li>
+            		<li>昆明店</li>
+            		<li>武汉雪松店</li>
+            		<li>天津店</li>
+            		<li>无锡店</li>
+            		<li>重庆店</li>
+            		<li>福州店</li>
+            		<li>南宁店</li>
+            		<li>沈阳店</li>
+            		<li>深圳店</li>
+            		<li>湛江店</li>
+            		<li>中山店</li>
+            		<li>厦门店</li>
+            		<li>佛山店</li>
+            		<li>汕头店</li>
+            		<li>哈尔滨店</li>
+            		<li>合肥店</li>
+            		<li>吉林店</li>
+            		<li>长沙店</li>
+            		<li>大连店</li>
+            		<li>青岛店</li>
+            		<li>苏州吴中</li>
+            		<li>苏州互益</li>
+            		<li>茂名店</li>
+            		<div style="clear: both;"></div>
+            	</ul>
+            <div style="clear: both;"></div>
+          </div>
+          
+          <div id="images">
+			  <img src="images/bjcy-01.jpg">
+		  </div>
+		  
+		  <div class="addr"> 
+			<span class="phone">028-85033975</span>
+			<span class="opentime">（8:30-17:30，周六日休息）</span>				
+			<em class="addr1" title="成都市武侯区玉林北街1号附7、8号玉林品上1层商铺。（一环路九茹村好又多背面）">
+				<b class="addricon"></b>成都市武侯区玉林北街1号附7、8号玉林品上1层商铺。
+			</em>
+		</div>
+          <div style="clear: both;"></div>
+		</div>
+		
+	</div>
+
+		
+		<!--轮播图下面开始-->
+		
+		<div id="lie1">
+			<div id="lie1_zuo">
+				<div id="lie1_zuo_title">
+					<ul class="activeTab">
+						<li class="">特价抢购</li>
+						<li class="cur">热卖商品</li>
+						<li class="">热评新品</li>
+						<li class="">新品上架</li>
+					</ul>
+					<div style="clear: both;"></div>
+				</div>
+				
+				<div id="lie1_zuo_photo">
+					<ul class="fore">
+						<li>
+							<div class="p_img">
+								<a href="" class=" imgs" target="_blank" title="思博海">
+								<img class="lazy" alt="思博海" width="140" height="140" src="images/xiao1.jpg" style="display: inline;">
+								</a> 
+							</div>
+                			<div class="p_info"> 
+			    				<div class="p_name">
+			    					<a href="" target="_blank" title="思博海">思博海</a>
+			    				</div>                   
+								<div class="p_pric price_info prinfo_5923" prinfo="5923">￥42.00</div>
+	                    		<div style="clear: both;"></div>
+                        	</div> 
+                    	<div style="clear: both;"></div>
+                  			<i></i> 
+						</li>
+						<li>
+							<div class="p_img">
+								<a href="" class=" imgs" target="_blank" title="万全力太">
+									<img class="lazy" alt="七十味珍珠丸" width="140" height="140" src="images/xiao2.jpg" style="display: inline;">	
+							</div>
+                    		<div class="p_info"> 
+			    				<div class="p_name">
+			    					<a href="" target="_blank" title="万全力太">万全力太</a>
+			    				</div>                   
+								<div class="p_pric price_info prinfo_5997" prinfo="5997">特价中</div>
+	                    		<div style="clear: both;"></div>
+                        	</div> 
+                    		<div style="clear: both;"></div>
+                  			<i></i> 
+						</li>
+						<li>
+							<div class="p_img">
+								<a href="" class=" imgs" target="_blank" title="七十味珍珠丸">
+									<img class="lazy" alt="七十味珍珠丸" width="140" height="140" src="images/xiao3.jpg" style="display: inline;">
+								</a> 
+							</div>
+                    		<div class="p_info"> 
+			    				<div class="p_name">
+			    					<a href="" target="_blank" title="七十味珍珠丸">七十味珍珠丸</a>
+			    				</div>                   
+								<div class="p_pric price_info prinfo_6338" prinfo="6338">特价中</div>
+	                   			<div style="clear: both;"></div>
+                        	</div> 
+                   			<div style="clear: both;"></div>
+                  			<i></i> 
+						</li>
+						<li>
+							<div class="p_img">
+								<a href="" class=" imgs" target="_blank" title="益髓颗粒">
+									<img class="lazy" alt="益髓颗粒" width="140" height="140" src="images/xiao4.jpg" style="display: inline;">
+								</a> 
+							</div>
+                    		<div class="p_info"> 
+			    				<div class="p_name">
+			    					<a href="" target="_blank" title="益髓颗粒">益髓颗粒</a>
+			    				</div>                   
+								<div class="p_pric price_info prinfo_14847" prinfo="14847">特价中</div>
+                        	</div> 
+                    		<div style="clear: both;"></div>
+                   		</li>               
+                   		<div style="clear: both;"></div>
+                	</ul>
+				
+					
+					<!--<div class="xiaotitle">
+			            <ul class="jq">
+						    <li class="tab"><a>妇儿科</a></li>
+						    <li class="tab "><a>肿瘤</a></li>
+						    <li class="tab"><a>风湿免疫科</a></li>
+						    <li class="tab cur"><a>神经科</a></li>
+						    <li class="tab"><a>泌尿生殖科</a></li>
+			            </ul>
+			            <div style="clear: both;"></div>
+			        </div>-->
+			        
+			        <div class="lie_right">
+			        	<div class="title01">限时抢购</div>
+			        	
+			        	<div class="cont01" id="focus_131010">
+        					<ul>
+	    	    			<li>
+	    	    				<div class="conwid"> 
+            					<div class="saleinf"> 安康信 </div>
+	    						<div class="saleimg">
+	    							<a href="goods-13277.html" target="_blank" title="安康信">
+	    								<img class="lazy-out" src="images/xiaolunbo1.jpg" style="display: inline;">
+	    							</a>
+	    						</div>
+			    				<div class="salepric">
+			    					<span class="price_info prinfo_13277" prinfo="13277">￥66.00</span>
+			    					<del>￥77.00</del>
+			    				</div>
+		            			<div class="clear"></div> 
+		            			</div>
+	    	    			</li>
+	    					</ul> 
+	
+      						<div style="clear: both;"></div>
+  						<div class="btnBg_131010" style="opacity: 0.5;"></div>
+      						<div class="btn_131010">
+      							<span style="opacity: 0.4;"></span>
+      							<span style="opacity: 1;"></span>
+      							<span style="opacity: 0.4;"></span>
+      							<span style="opacity: 0.4;"></span>
+      						</div>
+			        	</div>
+			        
+			        </div>
+			        <div style="clear: both;"></div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+	
+	
+		<!--楼层-->
+		
+		<div class="fore2"> 
+  		
+		<div class="channel"> 
+        	<div class="unit_info"> 
+            	<strong>
+            		<a href="" target="_blank">男性专场</a>
+            	</strong> 
+                	<p>男科用药大全，保健养生</p> 
+                <span>
+                	<a href="" target="_blank">进入男科频道</a>
+                </span> 
+            </div> 
+        	<div class="unit">
+        		<img src="images/topicunita.jpg">
+        	</div> 
+        	<div style="clear: both;"></div>
+        </div>        
+        
+        <div class="channel"> 
+        	<div class="unit_info"> 
+            	<strong>
+            		<a href="" target="_blank">肿瘤防治</a>
+            	</strong> 
+                <p>治癌路上，让您更放心</p> 
+                <span>
+                	<a href="" target="_blank">进入肿瘤频道</a>
+                </span> 
+            </div> 
+        	<div class="unit">
+        		<img src="images/zhongliu.jpg">
+        	</div> 
+        	<div style="clear: both;"></div>
+        </div>         
+        
+        <div class="channel"> 
+        	<div class="unit_info"> 
+            	<strong>
+            		<a href="" target="_blank">什么是银屑病</a>
+            	</strong> 
+                <p>银屑病症状、病因、类型、治疗</p> 
+                <span>
+                	<a href="" target="_blank">进入银屑病频道</a>
+                </span> 
+            </div> 
+        	<div class="unit">
+        		<img src="images/topicunitc.jpg">
+        	</div> 
+        <div style="clear: both;"></div>
+        </div> 
+        
+        <div class="channel"> 
+        	<div class="unit_nav"> 
+            	<div class="navtit">更多频道</div> 
+            	<div class="navcon mart10"> 
+                	<ul> 
+                    	<li><a href="" target="_blank" style="color:red">癫痫频道</a></li> 
+                        <li><a href="" target="_blank">关爱白癜风</a></li> 
+                        <li><a href="" target="_blank" style="color:red">肝病频道</a></li> 
+                        <li><a href="" target="_blank" style="color:red">肿瘤频道</a></li> 						
+                        <li><a href="" target="_blank">人血白蛋白</a></li> 
+                        <li><a href="" target="_blank">默沙东</a></li> 
+                    </ul> 
+                <div style="clear: both;"></div>
+                </div> 
+            <div style="clear: both;"></div>
+            </div> 
+        <div style="clear: both;"></div> 
+        </div> 
+  		<div style="clear: both;"></div> 
+  </div>
+	
+		<!--一楼-->
+		<div id="first_float">
+			<div id="float_title">1F 男性专场</div>
+			<div id="xuanran_photo">
+				<div id="xuanran_left">
+					<div id="xuanran_left_top"><a href=""><img src="images/top.jpg"></a></div>
+					
+					<div id="xuanran_left_bottom">
+						<div class="marlt">
+							<a href="" target="_blank"><strong>男科频道</strong></a>
+							<a href="" target="_blank">脱发</a>
+							<a href="" target="_blank" title="勃起功能障碍（阳痿）">勃起功能障碍（阳痿）</a>
+							<a href="" title="早泄">早泄</a>
+							<a href="" target="_blank" title="男性不育症">男性不育症</a>
+							<a href="" target="_blank" title="前列腺肥大">前列腺肥大</a>
+							<a href="" target="_blank" title="前列腺炎">前列腺炎</a>
+							<a href="" target="_blank" title="泌尿系统感染">泌尿系统感染</a> 
+                    <div style="clear: both;"></div> 
+                    </div>
+					</div>
+				</div>
+				
+				<div id="xuanran_right">
+					<ul id="stl">
+						<!--<li class="proitem"> 
+	                    	<div class="pro_img">
+	                    		<a href="" target="_blank" title="万艾可">
+	                    			<img class="lazy" title="万艾可" width="140" height="140" src="images/1.jpg" style="display: inline;"></a>
+	                    	</div> 
+	                        <div class="pro_info"> 
+	                            <p class="pro_name">
+	                            	<a href="" title="万艾可" target="_blank">万艾可</a>
+	                            </p> 
+	                            <p class="pro_pric price_info prinfo_5974" prinfo="5974">￥465.00</p>
+	                        <div style="clear: both;"></div> 
+	                        </div> 
+						<div style="clear: both;"></div> 
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	
+		<!--长图片-->
+		<div id="im"><img src="images/p.jpg" /></div>
+		
+		<!--二楼-->
+		<div id="first_float">
+			<div id="float_title" style="color: #3DC190;">2F 专科用药</div>
+			<div id="xuanran_photo" style="border-top: 2px solid #3DC190;">
+				<div id="xuanran_left">
+					<div id="xuanran_left_top"><a href=""><img src="images/twofloat.jpg"></a></div>
+					
+					<div id="xuanran_left_bottom" style="background:#a7f1dd ;">
+						<div class="marlt" >
+							<a href="" target="_blank"><strong>男科频道</strong></a>
+							<a href="" target="_blank">脱发</a>
+							<a href="" target="_blank" title="勃起功能障碍（阳痿）">勃起功能障碍（阳痿）</a>
+							<a href="" title="早泄">早泄</a>
+							<a href="" target="_blank" title="男性不育症">男性不育症</a>
+							<a href="" target="_blank" title="前列腺肥大">前列腺肥大</a>
+							<a href="" target="_blank" title="前列腺炎">前列腺炎</a>
+							<a href="" target="_blank" title="泌尿系统感染">泌尿系统感染</a> 
+                    <div style="clear: both;"></div> 
+                    </div>
+					</div>
+				</div>
+				
+				<div id="xuanran_right">
+					<ul id="stl1">
+						<!--<li class="proitem"> 
+	                    	<div class="pro_img">
+	                    		<a href="" target="_blank" title="万艾可">
+	                    			<img class="lazy" title="万艾可" width="140" height="140" src="images/1.jpg" style="display: inline;"></a>
+	                    	</div> 
+	                        <div class="pro_info"> 
+	                            <p class="pro_name">
+	                            	<a href="" title="万艾可" target="_blank">万艾可</a>
+	                            </p> 
+	                            <p class="pro_pric price_info prinfo_5974" prinfo="5974">￥465.00</p>
+	                        <div style="clear: both;"></div> 
+	                        </div> 
+						<div style="clear: both;"></div> 
+						</li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+	
+		<!--三楼图片-->
+		<div id="im"><img src="images/third.jpg" /></div>
+		
+		<!--三楼-->
+		<div id="first_float">
+			<div id="float_title" style="color: #FC9359;">3F 常备用药</div>
+			<div id="xuanran_photo" style="border-top: 2px solid #FC9359;">
+				<div id="xuanran_left" style="background: #ffccab;">
+					<div id="xuanran_left_top"><a href=""><img src="images/thirdfloa.jpg"></a></div>
+					
+					<div id="xuanran_left_bottom">
+						<div class="marlt" >
+							<a href="" target="_blank"><strong>男科频道</strong></a>
+							<a href="" target="_blank">脱发</a>
+							<a href="" target="_blank" title="勃起功能障碍（阳痿）">勃起功能障碍（阳痿）</a>
+							<a href="" title="早泄">早泄</a>
+							<a href="" target="_blank" title="男性不育症">男性不育症</a>
+							<a href="" target="_blank" title="前列腺肥大">前列腺肥大</a>
+							<a href="" target="_blank" title="前列腺炎">前列腺炎</a>
+							<a href="" target="_blank" title="泌尿系统感染">泌尿系统感染</a> 
+                    <div style="clear: both;"></div> 
+                    </div>
+					</div>
+				</div>
+				
+				<div id="xuanran_right">
+					<ul id="stl2">
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		<!--四楼图片-->
+		<div id="im"><img src="images/four.jpg" /></div>
+		
+		<!--四楼-->
+		<div id="first_float">
+			<div id="float_title">4F 医疗器械</div>
+			<div id="xuanran_photo" style="border-top: 2px solid #92C4FF;">
+				<div id="xuanran_left" style="background: #d7eaff;">
+					<div id="xuanran_left_top"><a href=""><img src="images/fourfloat.jpg"></a></div>
+					
+					<div id="xuanran_left_bottom">
+						<div class="marlt">
+							<a href="" target="_blank"><strong>男科频道</strong></a>
+							<a href="" target="_blank">脱发</a>
+							<a href="" target="_blank" title="勃起功能障碍（阳痿）">勃起功能障碍（阳痿）</a>
+							<a href="" title="早泄">早泄</a>
+							<a href="" target="_blank" title="男性不育症">男性不育症</a>
+							<a href="" target="_blank" title="前列腺肥大">前列腺肥大</a>
+							<a href="" target="_blank" title="前列腺炎">前列腺炎</a>
+							<a href="" target="_blank" title="泌尿系统感染">泌尿系统感染</a> 
+                    <div style="clear: both;"></div> 
+                    </div>
+					</div>
+				</div>
+				
+				<div id="xuanran_right">
+					<ul id="stl3">
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+		<!--五楼图片-->
+		<div id="im"><img src="images/five.jpg" /></div>
+		
+		<!--五楼-->
+		<div id="first_float">
+			<div id="float_title" style="color: #EF5752;">5F 专场特惠</div>
+			<div style="clear: both;"></div>
+			<div id="xuanran1_photo">
+				<div id="p1"><img src="images/five1.jpg"></div>
+				<div id="p1"><img src="images/five2.jpg"></div>
+				<div id="p1"><img src="images/five3.jpg"></div>
+				<div style="clear: both;"></div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+				
+				
+		<!--选项卡-->	
+		<div id="card">
+			<div class="activeBg">
+				<ul class="tit activeTab">
+					<li class="cur">推荐药品</li>
+					<li class="">热门专题</li>
+					<li class="">友情链接</li>
+				</ul>
+				<div style="clear: both;"></div>
+			</div>
+			
+			<div class="activecon">
+				<div style="display:block;" class="con Swtab" id="con1">
+					<a href="" target="_blank" title="金戈">金戈</a>
+					<a href="" target="_blank" title="人血白蛋白">人血白蛋白</a>
+					<a href="" target="_blank" title="倍林达">倍林达</a>
+					<a href="" target="_blank" title="莉芙敏片">莉芙敏片</a>
+					<a href="" target="_blank" title="韦瑞德">韦瑞德</a>
+					<a href="" target="_blank" title="辛复宁">辛复宁</a>
+					<a href="" target="_blank" title="复明胶囊">复明胶囊</a>
+					<a href="" target="_blank" title="捷诺维">捷诺维</a>
+					<a href="" target="_blank" title="万艾可">万艾可</a>
+					<a href="" target="_blank" title="和恩">和恩</a>
+					<a href="" target="_blank" title="七十味珍珠丸">七十味珍珠丸</a>
+					<a href="" target="_blank" title="莎尔福">莎尔福</a>
+					<a href="" target="_blank" title="痛风舒片">痛风舒片</a>
+					<a href="" target="_blank" title="安立泽">安立泽</a>
+					<a href="" target="_blank" title="康瑞保">康瑞保</a>
+					<a href="" target="_blank" title="虎标颈肩霜">虎标颈肩霜</a>
+					<a href="" target="_blank" title="百泌达">百泌达</a>
+					<a href="" target="_blank" title="康乐保">康乐保</a>
+					<a href="" target="_blank" title="曲莱">曲莱</a>
+					<a href="" target="_blank" title="槟榔十三味丸">槟榔十三味丸</a>
+					<a href="" target="_blank" title="康维德">康维德</a>
+					<a href="" target="_blank" title="泛福舒">泛福舒</a>
+					<a href="" target="_blank" title="可元">可元</a>
+					<a href="" target="_blank" title="切诺">切诺</a>
+					<a href="" target="_blank" title="非那雄胺片">非那雄胺片</a>
+					<a href="" target="_blank" title="希爱力">希爱力</a>
+					<a href="" target="_blank" title="惠加强-G">惠加强-G</a>
+					<a href="" target="_blank" title="必利劲">必利劲</a>
+					<a href="" target="_blank" title="脾氨肽口服溶液">脾氨肽口服溶液</a>
+					<a href="" target="_blank" title="柏西">柏西</a>
+					<a href="" target="_blank" title="捷诺达">捷诺达</a>
+					<a href="" target="_blank" title="臌症丸">臌症丸</a>
+					<a href="" target="_blank" title="优立通">优立通</a>
+					<a href="" target="_blank" title="舒利迭">舒利迭</a>
+					<a href="" target="_blank" title="芬吗通">芬吗通</a>
+					<a href="" target="_blank" title="定君生">定君生</a>
+				</div>
+				<div id="con2" class="con Swtab" style="display: none;">
+				<a href="" target="_blank" title="金戈特惠">金戈特惠</a>
+				<a href="" target="_blank" title="人血白蛋白">人血白蛋白</a>
+				<a href="" target="_blank" title="抑郁症">抑郁症</a>
+				<a href="" target="_blank" title="臌症丸">臌症丸</a>
+				<a href="" target="_blank" title="老年痴呆症">老年痴呆症</a>
+				<a href="" target="_blank" title="干眼症">干眼症</a>
+				<a href="" target="_blank" title="白癜风">白癜风</a>
+				<a href="" target="_blank" title="男春宝颗粒">男春宝颗粒</a>
+				<a href="" target="_blank" title="恩替卡韦">恩替卡韦</a>
+				<a href="" target="_blank" title="淋巴瘤治疗">淋巴瘤治疗</a>
+				<a href="" target="_blank" title="冠心病">冠心病</a>
+				<a href="" target="_blank" title="中秋节促销">中秋节促销</a>
+				<a href="" target="_blank" title="康乐保">康乐保</a>
+				<a href="" target="_blank" title="爱眼日">爱眼日</a>
+				<a href="" target="_blank" title="定君生">定君生</a>
+				<a href="" target="_blank" title="尖锐湿疣">尖锐湿疣</a>
+				<a href="" target="_blank" title="脱发频道">脱发频道</a>
+				<a href="" target="_blank" title="必利劲活动">必利劲活动</a>
+				<a href="" target="_blank" title="癫痫">癫痫</a>
+				<a href="" target="_blank" title="莉芙敏片">莉芙敏片</a>
+				<a href="" target="_blank" title="造口袋">造口袋</a>
+				<a href="" target="_blank" title="默沙东">默沙东</a>
+				<a href="" target="_blank" title="疤痕">疤痕</a>
+				<a href="" target="_blank" title="银屑病频道">银屑病频道</a>
+				</div>
+				<div style="display:none;" class="con Swtab" id="con1">
+					<a href="" target="_blank" title="金戈">金戈</a>
+					<a href="" target="_blank" title="人血白蛋白">人血白蛋白</a>
+					<a href="" target="_blank" title="倍林达">倍林达</a>
+					<a href="" target="_blank" title="莉芙敏片">莉芙敏片</a>
+					<a href="" target="_blank" title="韦瑞德">韦瑞德</a>
+					<a href="" target="_blank" title="辛复宁">辛复宁</a>
+					<a href="" target="_blank" title="复明胶囊">复明胶囊</a>
+					<a href="" target="_blank" title="捷诺维">捷诺维</a>
+					<a href="" target="_blank" title="万艾可">万艾可</a>
+					<a href="" target="_blank" title="和恩">和恩</a>
+					<a href="" target="_blank" title="七十味珍珠丸">七十味珍珠丸</a>
+					<a href="" target="_blank" title="莎尔福">莎尔福</a>
+					<a href="" target="_blank" title="痛风舒片">痛风舒片</a>
+					<a href="" target="_blank" title="安立泽">安立泽</a>
+					<a href="" target="_blank" title="康瑞保">康瑞保</a>
+					<a href="" target="_blank" title="虎标颈肩霜">虎标颈肩霜</a>
+					<a href="" target="_blank" title="百泌达">百泌达</a>
+					<a href="" target="_blank" title="康乐保">康乐保</a>
+					<a href="" target="_blank" title="曲莱">曲莱</a>
+					<a href="" target="_blank" title="槟榔十三味丸">槟榔十三味丸</a>
+					<a href="" target="_blank" title="康维德">康维德</a>
+					<a href="" target="_blank" title="泛福舒">泛福舒</a>
+					<a href="" target="_blank" title="可元">可元</a>
+					<a href="" target="_blank" title="切诺">切诺</a>
+					<a href="" target="_blank" title="非那雄胺片">非那雄胺片</a>
+					<a href="" target="_blank" title="希爱力">希爱力</a>
+					<a href="" target="_blank" title="惠加强-G">惠加强-G</a>
+					<a href="" target="_blank" title="必利劲">必利劲</a>
+					<a href="" target="_blank" title="脾氨肽口服溶液">脾氨肽口服溶液</a>
+					<a href="" target="_blank" title="柏西">柏西</a>
+					<a href="" target="_blank" title="捷诺达">捷诺达</a>
+					<a href="" target="_blank" title="臌症丸">臌症丸</a>
+					<a href="" target="_blank" title="优立通">优立通</a>
+					<a href="" target="_blank" title="舒利迭">舒利迭</a>
+					<a href="" target="_blank" title="芬吗通">芬吗通</a>
+					<a href="" target="_blank" title="定君生">定君生</a>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		
+		
+		
+		
+		<!--尾部-->
+		<div id="foot">
+			<div id="foot_center">
+				<div id="foot_center1">
+					<h3 class="bt1">购物指南</h3>
+					<ul> 
+						<li><a href="">退换货流程</a></li> 
+						<li><a href="">会员说明</a></li> 
+						<li><a href="">订单管理</a></li> 
+						<li><a href="">订购方式</a></li> 
+						<li><a href="">订购流程</a></li> 
+						<li><a href="">用户注册</a></li> 
+					</ul>
+				</div>
+				<div id="foot_center1">
+					<h3 class="bt2">购物保障</h3>
+					<ul> 
+						<li><a href="">配送保障</a></li> 
+						<li><a href="">直营连锁</a></li> 
+						<li><a href="">GSP管理</a></li> 
+						<li><a href="">7天退换货</a></li> 
+						<li><a href="">合法资质</a></li> 
+						<li><a href="">十年品牌</a></li> 
+					</ul>
+				</div>
+				<div id="foot_center1">
+					<h3 class="bt3">支付方式</h3>
+					<ul> 
+						<li><a href="">网银/在线支付</a></li> 
+						<li><a href="">银行汇款</a></li> 
+						<li><a href="">货到付款</a></li> 
+					</ul>
+				</div>
+				<div id="foot_center1">
+					<h3 class="bt4">配送服务</h3>
+					<ul> 
+						<li><a href="">冷藏易碎品说明 </a></li> 
+						<li><a href="">商品签收</a></li> 
+						<li><a href="">快递查询</a></li> 
+						<li><a href="">配送细则</a></li> 
+					</ul>
+				</div>
+				<div id="foot_center1">
+					<h3 class="bt5">售后服务</h3>
+					<ul> 
+						<li><a href="">投诉与建议</a></li> 
+						<li><a href="">7天退换货</a></li> 
+						<li><a href="">提供机打发票</a></li> 
+						<li><a href="">全程用药服务</a></li> 
+					</ul>
+				</div>
+				<div id="foot_center1">
+					<h3 class="bt6">关于我们</h3>
+					<ul> 
+						<li><a href="">商务伙伴</a></li> 
+						<li><a href="">全国直营门店</a></li> 
+						<li><a href="">公司简介</a></li> 
+						<li><a href="">招募供应商</a></li> 
+						<li><a href="">人才招聘</a></li> 
+					</ul>
+				</div>
+			
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		
+		
+		
+		<div id="foot1">
+			<div id="foot_box">
+				<div class="copyright">
+					<a href="">互联网药品交易服务资格证书</a> 
+					<a href="">互联网药品信息服务资格证书</a> 
+					<a href="">药品经营许可证</a> 
+					<a href="">食品经营许可证</a> 
+					<a href="">GSP认证证书</a> 
+					<a href="">公司营业执照</a> 
+					<a href="">执业药师证</a>
+				</div>
+				<div class="bottom-info">
+		        <div class="btleft"> <br>
+		        <a href="" style="color:#F03B43">粤ICP备11004502号-3</a> @2002~2015 
+		        <a href="">百济新特网上药店</a> 
+		        <a href="">百济新特药房网</a> www.baiji.com.cn 版权所有，并保留所有权利<br>
+		        广州百济新特药业连锁有限公司旗下的
+		        <a href="">百济健康商城</a>是国内专业从事
+		        <a href="">专科药品、日常药品、医疗器械、保健品销售</a>的正规
+		        <a href="">网上药店</a><br>
+		        本公司常年法律顾问： 广东信利盛达律师事务所<br>
+		        本公司及客户的合法权益均受法律保护， 任何侵犯本公司及客户利益的任何单位和个人必将受到法律的追究 。</div>
+		        <div class="btright">
+		        <input name="telno" id="telno" value="tel_top" type="hidden">
+		        <img src="images/police_1.jpg" alt="广东网警"> <img src="images/police_2.jpg" alt="广东网警"></div>
+		        <div style="clear: both;"></div>
+		        </div>
+			</div>
+		</div>
+	</body>
+	<script>
+		jQuery(function($){
+			$(".in-item").on("mouseover",function(){
+	               $("#sub").css('display','block');              
+	            })
+			$("#sub").on("mouseover",function(){
+	                $("#sub").css('display','block');   
+	            })
+			$("#sub").on("mouseout",function(){
+	                $("#sub").css('display','none'); 
+	            })
+				$(function(){		
+		//设计案例切换
+		$('.tit li').mouseover(function(){
+			var liindex = $('.tit li').index(this);
+			$(this).addClass('cur').siblings().removeClass('cur');
+			$('.activecon div.con').eq(liindex).fadeIn(150).siblings('div.con').hide();
+			var liWidth = $('.tit li').width();
+		});
+		
+		//设计案例hover效果
+//		$('.product-wrap .product li').hover(function(){
+//			$(this).css("border-color","#ff6600");
+//			$(this).find('p > a').css('color','#ff6600');
+//		},function(){
+//			$(this).css("border-color","#fafafa");
+//			$(this).find('p > a').css('color','#666666');
+//		});
+		});
+        
+})
+	    
+	
+		
+	</script>
+</html>

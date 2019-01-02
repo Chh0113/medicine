@@ -1,0 +1,229 @@
+@charset "UTF-8";
+* {
+  margin: 0px auto;
+}
+
+/*头部*/
+#head {
+  width: 100%;
+  height: 100px;
+  background: #fff;
+  box-shadow: 0 0 5px #888;
+  padding-left: 70px;
+}
+#head #head_box {
+  width: 330px;
+  float: left;
+  margin-top: 5px;
+}
+#head #head_right {
+  width: 365px;
+  height: 90px;
+  float: right;
+  background: url(../images/kdlcn_logo.jpg) right center no-repeat;
+  margin-right: 140px;
+}
+#head #head_right span {
+  font-size: 16px;
+  display: block;
+  margin-top: 35px;
+  text-align: right;
+  padding-right: 210px;
+}
+#head #head_right span a {
+  color: #ff5c4d;
+}
+
+/*中间部分*/
+#center {
+  width: 380px;
+  margin-top: 50px;
+}
+#center #name_box {
+  background: #fff;
+  border: 1px solid #dddddd;
+}
+#center #name_box #name {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  font-family: 'Microsoft yahei';
+  color: #4e4e4e;
+  text-indent: 20px;
+  font-size: 15px;
+}
+#center #name_box .name {
+  width: 235px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+  padding: 10px 0px;
+}
+#center #name_box input {
+  width: 235px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+  padding: 10px 0px;
+  outline: none;
+  font-size: 14px;
+}
+#center span {
+  left: 0px;
+  top: 45px;
+  width: 272px;
+  padding-left: 20px;
+  height: 20px;
+  line-height: 22px;
+  font-size: 12px;
+  background-color: #fff;
+}
+#center #password {
+  background: #fff;
+  border: 1px solid #dddddd;
+}
+#center #password #password1 {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  font-family: 'Microsoft yahei';
+  color: #4e4e4e;
+  text-indent: 20px;
+  font-size: 15px;
+}
+#center #password .password2 {
+  width: 235px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+  padding: 10px 0px;
+}
+#center #password input {
+  width: 235px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+  padding: 10px 0px;
+  outline: none;
+  font-size: 14px;
+}
+#center #password_box {
+  background: #fff;
+  border: 1px solid #dddddd;
+}
+#center #password_box #password_box1 {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  font-family: 'Microsoft yahei';
+  color: #4e4e4e;
+  text-indent: 20px;
+  font-size: 15px;
+}
+#center #password_box .password_box2 {
+  width: 235px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+  padding: 10px 0px;
+}
+#center #password_box input {
+  width: 235px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+  padding: 10px 0px;
+  outline: none;
+  font-size: 14px;
+}
+#center #yanzhengma {
+  background: #fff;
+  border: 1px solid #dddddd;
+  margin-left: 0px;
+  width: 238px;
+}
+#center #yanzhengma #yanzhengma1 {
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  font-family: 'Microsoft yahei';
+  color: #4e4e4e;
+  text-indent: 20px;
+  font-size: 15px;
+}
+#center #yanzhengma .code_input {
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+  padding: 10px 0px;
+}
+#center #yanzhengma input {
+  width: 100px;
+  height: 20px;
+  line-height: 20px;
+  border: none;
+  padding: 10px 0px;
+  outline: none;
+  font-size: 14px;
+}
+#center .xiayibu {
+  width: 100%;
+  height: 42px;
+  display: block;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  background: #ff5c4d;
+  border: none;
+  font: 400 18px/42px "\5FAE\8F6F\96C5\9ED1";
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+#center .xiayibu:hover {
+  background: #f03b44;
+}
+
+/*尾部*/
+#foot #foot_box {
+  width: 960px;
+  margin: 0 auto;
+}
+#foot #foot_box .copyright {
+  border-top: 1px solid #D7D7D7;
+  line-height: 30px;
+  text-align: center;
+}
+#foot #foot_box .copyright a {
+  color: #f03b43;
+  margin: 0 5px;
+}
+#foot #foot_box .bottom-info {
+  color: #656565;
+  margin: 0 auto;
+  width: 960px;
+}
+#foot #foot_box .bottom-info a {
+  color: #656565;
+}
+#foot #foot_box .bottom-info .btleft {
+  display: inline;
+  float: left;
+  line-height: 20px;
+  margin-left: 25px;
+  text-align: right;
+}
+#foot #foot_box .bottom-info .btright {
+  display: inline-block;
+  width: 160px;
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=zhuce.css.map */

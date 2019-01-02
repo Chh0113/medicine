@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/login.css" />
+		<script type="text/javascript" src="../js/common.js" ></script>
+		<script type="text/javascript" src="../js/login.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="head">
+			<div id="head_box">
+				<img src="../images/logo.jpg" />
+			</div>
+			<div id="head_right">
+				<span>已有账号？<a href="login.html">请登陆 ></a> </span>
+			</div>
+		</div>
+		
+		<!--中间部分-->
+		<div id="center">
+			<div id="center_box">
+				<div id="title">账号密码登录</div>
+				<div class="people">
+                    <input type="text" class="text" autocomplete="off" onblur="if(this.value==''){this.value='请输入邮箱/用户名/手机号';this.style.color='#999999'}" onfocus="this.style.color='#333';if(this.value=='请输入邮箱/用户名/手机号') this.value='';" value="请输入邮箱/用户名/手机号" name="loginusername" id="name" style="color: rgb(153, 153, 153);">
+					<div class="text_position" style="display:none;"></div>
+                    <!--<label for="" class="focus error" id="errUserName" style="display:none"></label>-->
+                    <span id="usninf"></span>
+                </div>
+                <div class="password">
+                    <input type="password" class="psd" autocomplete="off" onblur="if(this.value==''){this.value='请输入邮箱/用户名/手机号';this.style.color='#999999'}" onfocus="this.style.color='#333';if(this.value=='请输入邮箱/用户名/手机号') this.value='';" value="请输入邮箱/用户名/手机号" name="loginusername" id="password" style="color: rgb(153, 153, 153);">
+					<!--<input type="password" class="psd1" name="loginpassword" id="password2">-->
+                    <!--<label for="" class="focus error" id="psd1" style="display:none"></label>-->
+                    <span id="usninf1"></span>
+                </div>
+                
+                <div id="flole">
+                	<div class="flolef">
+                   		<a href="" target="_blank">忘记密码</a>
+                	</div>
+                	
+                	<div class="florig">
+                        <label>
+                        	<a href="" class="moumov">免费注册 ></a>
+                        </label>
+                    </div>
+                </div>
+                
+                <input type="button" name="submit" value="登 录" class="login" id="login1" onclick="userLoginvg()">
+                
+                <div class="weibu">
+                    <p>您还可以使用合作网站账号登录康德乐：</p>
+					<p class="way151028">
+						<a href="" class="logway qq"></a>
+						<a href="" class="logway weibo"></a>
+						<a href="" class="logway wechat"></a>
+					</p>                            
+                </div>
+                
+			</div>
+		</div>
+		
+		<!--尾部-->
+		<div id="foot">
+			<div id="foot_box">
+				<div class="copyright">
+					<a href="">互联网药品交易服务资格证书</a> 
+					<a href="">互联网药品信息服务资格证书</a> 
+					<a href="">药品经营许可证</a> 
+					<a href="">食品经营许可证</a> 
+					<a href="">GSP认证证书</a> 
+					<a href="">公司营业执照</a> 
+					<a href="">执业药师证</a>
+				</div>
+				<div class="bottom-info">
+		        <div class="btleft"> <br>
+		        <a href="" style="color:#F03B43">粤ICP备11004502号-3</a> @2002~2015 
+		        <a href="">百济新特网上药店</a> 
+		        <a href="">百济新特药房网</a> www.baiji.com.cn 版权所有，并保留所有权利<br>
+		        广州百济新特药业连锁有限公司旗下的
+		        <a href="">百济健康商城</a>是国内专业从事
+		        <a href="">专科药品、日常药品、医疗器械、保健品销售</a>的正规
+		        <a href="">网上药店</a><br>
+		        本公司常年法律顾问： 广东信利盛达律师事务所<br>
+		        本公司及客户的合法权益均受法律保护， 任何侵犯本公司及客户利益的任何单位和个人必将受到法律的追究 。</div>
+		        <div class="btright">
+		        <input name="telno" id="telno" value="tel_top" type="hidden">
+		        <img src="../images/police_1.jpg" alt="广东网警"> <img src="../images/police_2.jpg" alt="广东网警"></div>
+		        <div style="clear: both;"></div>
+		        </div>
+			</div>
+		</div>
+	</body>
+</html>

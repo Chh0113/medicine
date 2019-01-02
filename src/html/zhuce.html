@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/base.css" />
+		<link rel="stylesheet" href="../css/zhuce.css" />
+		<script type="text/javascript" src="../js/zhuce.js" ></script>
+		<script type="text/javascript" src="../js/common.js" ></script>
+		
+		<script type="text/javascript" src="../js/gVerify.js" ></script>
+		
+	</head>
+	<body>
+		<!--头部-->
+		<div id="head">
+			<div id="head_box">
+				<img src="../images/logo.jpg" />
+			</div>
+			<div id="head_right">
+				<span>已有账号？<a href="login.html">请登陆 ></a> </span>
+			</div>
+		</div>
+		
+		<!--中间部分-->
+		<div id="center">
+			<div id="name_box">
+                <div id="name">用户名</div>
+                <input type="text" class="name" autocomplete="off" onblur="if(this.value==''){this.value='请输入手机号码';this.style.color='#999999'}" onfocus="this.style.color='#333';if(this.value=='请输入手机号码') this.value='';" value="请输入手机号码" maxlength="11" style="color: rgb(153, 153, 153);" name="reg_phone" id="reg_phone">                
+            </div>
+            <span id="usninf"></span>
+            <div id="password">
+                <div id="password1">密码</div>
+                <input type="text" class="password2" autocomplete="off" onblur="if(this.value==''){this.value='请输入密码';this.style.color='#999999'}" onfocus="this.style.color='#333';if(this.value=='请输入密码') this.value='';" value="请输入密码" maxlength="11" style="color: rgb(153, 153, 153);" name="reg_phone" id="reg_phone">
+            </div>
+            <span id="usninf1"></span>
+            <!--<div id="password_box">
+                <div id="password_box1">确认密码</div>
+                <input type="text" class="password_box2" autocomplete="off" onblur="if(this.value==''){this.value='请输入手机号码';this.style.color='#999999'}" onfocus="this.style.color='#333';if(this.value=='请确认密码') this.value='';" value="请确认密码" maxlength="11" style="color: rgb(153, 153, 153);" name="reg_phone" id="reg_phone">
+            </div>
+            <span id="usninf2"></span>-->
+            <div id="yanzhengma">
+                <div id="yanzhengma1">验证码</div>
+                <input type="text" id="code_input" autocomplete="off" onblur="if(this.value==''){this.value='请输入验证码';this.style.color='#999999'}" onfocus="this.style.color='#333';if(this.value=='请输入验证码') this.value='';" value="请输入验证码" maxlength="11" style="color: rgb(153, 153, 153);" name="reg_phone" id="reg_phone">
+            </div>
+            <div id="v_container" style="width: 140px;height: 42px;;margin-right: 0px;margin-top: -43px;"></div>
+            <!--<button id="my_button">验证</button>-->
+            <span id="usninf3"></span>
+            <input type="button" name="submit" value="下一步" class="xiayibu" onclick="register1();">
+		</div>
+		
+		<!--尾部-->
+		<div id="foot">
+			<div id="foot_box">
+				<div class="copyright">
+					<a href="">互联网药品交易服务资格证书</a> 
+					<a href="">互联网药品信息服务资格证书</a> 
+					<a href="">药品经营许可证</a> 
+					<a href="">食品经营许可证</a> 
+					<a href="">GSP认证证书</a> 
+					<a href="">公司营业执照</a> 
+					<a href="">执业药师证</a>
+				</div>
+				<div class="bottom-info">
+		        <div class="btleft"> <br>
+		        <a href="" style="color:#F03B43">粤ICP备11004502号-3</a> @2002~2015 
+		        <a href="">百济新特网上药店</a> 
+		        <a href="">百济新特药房网</a> www.baiji.com.cn 版权所有，并保留所有权利<br>
+		        广州百济新特药业连锁有限公司旗下的
+		        <a href="">百济健康商城</a>是国内专业从事
+		        <a href="">专科药品、日常药品、医疗器械、保健品销售</a>的正规
+		        <a href="">网上药店</a><br>
+		        本公司常年法律顾问： 广东信利盛达律师事务所<br>
+		        本公司及客户的合法权益均受法律保护， 任何侵犯本公司及客户利益的任何单位和个人必将受到法律的追究 。</div>
+		        <div class="btright">
+		        <input name="telno" id="telno" value="tel_top" type="hidden">
+		        <img src="../images/police_1.jpg" alt="广东网警"> <img src="../images/police_2.jpg" alt="广东网警"></div>
+		        <div style="clear: both;"></div>
+		        </div>
+			</div>
+		</div>
+	</body>
+	<script>
+			var verifyCode = new GVerify("v_container");
+
+		document.getElementById("code_input").onblur = function(){
+			var res = verifyCode.validate(document.getElementById("code_input").value);
+			if(res){
+				usninf3.innerHTML = '验证正确';
+				usninf3.style.color = 'green';
+			}else{
+				usninf3.innerHTML = '验证错误';
+				usninf3.style.color = 'red';
+			}
+		}
+		</script>
+</html>
